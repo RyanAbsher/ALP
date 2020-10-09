@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Footprints)(type Legacy)(uri C:/Users/ryana/Documents/KiCAD/Cave/Cave2/Footprints.lib)(options "")(descr ""))
+  (lib (name Cave2-rescue)(type Legacy)(uri ${KIPRJMOD}/ALP-rescue.lib)(options "")(descr ""))
+)

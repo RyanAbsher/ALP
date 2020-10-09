@@ -1,0 +1,49 @@
+EESchema Schematic File Version 4
+LIBS:Cave2-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 900  1150 1650 1900
+U 5F7620D3
+F0 "STM32" 50
+F1 "STM32.sch" 50
+$EndSheet
+$Sheet
+S 5100 1200 1650 1900
+U 5F7621BF
+F0 "IO" 50
+F1 "IO.sch" 50
+$EndSheet
+$Sheet
+S 6900 1200 1600 1900
+U 5F7621C5
+F0 "Power" 50
+F1 "Power.sch" 50
+$EndSheet
+Text Notes 7250 1100 0    197  ~ 0
+Power
+Text Notes 5100 1050 0    197  ~ 0
+General IO
+Text Notes 1250 1000 0    197  ~ 0
+STM32
+$Sheet
+S 2950 1150 1650 1950
+U 5FE183FC
+F0 "Relays" 50
+F1 "Relays.sch" 50
+$EndSheet
+Text Notes 3300 1050 0    197  ~ 0
+Relays
+$EndSCHEMATC

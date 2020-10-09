@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+LIBS:Cave2-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:AZ1117-3.3 U4
+U 1 1 5F785E31
+P 5350 1600
+F 0 "U4" H 5350 1842 50  0000 C CNN
+F 1 "AZ1117-3.3" H 5350 1751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5350 1850 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 5350 1600 50  0001 C CNN
+	1    5350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5F785FC6
+P 4750 2000
+F 0 "C15" H 4842 2046 50  0000 L CNN
+F 1 "0.1uF" H 4842 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4750 2000 50  0001 C CNN
+F 3 "~" H 4750 2000 50  0001 C CNN
+	1    4750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5F785FFA
+P 5900 2000
+F 0 "C16" H 5992 2046 50  0000 L CNN
+F 1 "0.1uF" H 5992 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5900 2000 50  0001 C CNN
+F 3 "~" H 5900 2000 50  0001 C CNN
+	1    5900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1600 5650 1600
+Wire Wire Line
+	5900 1600 5900 1900
+Connection ~ 5650 1600
+Wire Wire Line
+	5650 1600 5900 1600
+Wire Wire Line
+	4750 1600 4750 1900
+Wire Wire Line
+	4750 1600 5050 1600
+Wire Wire Line
+	4750 2100 4750 2250
+Wire Wire Line
+	4750 2250 5350 2250
+Wire Wire Line
+	5350 2250 5350 1900
+Wire Wire Line
+	5350 2250 5900 2250
+Wire Wire Line
+	5900 2250 5900 2100
+Connection ~ 5350 2250
+$Comp
+L power:GND #PWR0164
+U 1 1 5F7880AE
+P 4750 2350
+F 0 "#PWR0164" H 4750 2100 50  0001 C CNN
+F 1 "GND" H 4755 2177 50  0000 C CNN
+F 2 "" H 4750 2350 50  0001 C CNN
+F 3 "" H 4750 2350 50  0001 C CNN
+	1    4750 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2350 4750 2250
+Connection ~ 4750 2250
+$Comp
+L power:+3.3V #PWR0165
+U 1 1 5F7889B8
+P 5900 1500
+F 0 "#PWR0165" H 5900 1350 50  0001 C CNN
+F 1 "+3.3V" H 5915 1673 50  0000 C CNN
+F 2 "" H 5900 1500 50  0001 C CNN
+F 3 "" H 5900 1500 50  0001 C CNN
+	1    5900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1500 4750 1600
+Connection ~ 4750 1600
+Wire Wire Line
+	5900 1500 5900 1600
+Connection ~ 5900 1600
+$Comp
+L power:+5V #PWR0167
+U 1 1 5F789CB8
+P 4750 1500
+F 0 "#PWR0167" H 4750 1350 50  0001 C CNN
+F 1 "+5V" H 4765 1673 50  0000 C CNN
+F 2 "" H 4750 1500 50  0001 C CNN
+F 3 "" H 4750 1500 50  0001 C CNN
+	1    4750 1500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4450 3200 4450 500 
+Text Notes 4500 850  0    118  ~ 0
+5v to 3.3v LDO\n1A Max
+Wire Notes Line
+	500  3200 11200 3200
+Wire Notes Line
+	6400 3200 6400 500 
+Wire Notes Line
+	8700 3200 8700 500 
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5F7EE2DF
+P 7500 1100
+AR Path="/5F7621BF/5F7EE2DF" Ref="J?"  Part="1" 
+AR Path="/5FE183FC/5F7EE2DF" Ref="J?"  Part="1" 
+AR Path="/5F7621C5/5F7EE2DF" Ref="J26"  Part="1" 
+F 0 "J26" H 7700 1000 50  0000 R CNN
+F 1 "5v In" H 7800 1100 50  0000 R CNN
+F 2 "TBL005A-500-02GY-2WT:CUI_TBL005A-500-02GY-2WT" H 7500 1100 50  0001 C CNN
+F 3 "~" H 7500 1100 50  0001 C CNN
+	1    7500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5F7EE3E1
+P 7200 1000
+F 0 "#PWR01" H 7200 850 50  0001 C CNN
+F 1 "+5V" H 7215 1173 50  0000 C CNN
+F 2 "" H 7200 1000 50  0001 C CNN
+F 3 "" H 7200 1000 50  0001 C CNN
+	1    7200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F7EE427
+P 7200 1300
+F 0 "#PWR02" H 7200 1050 50  0001 C CNN
+F 1 "GND" H 7205 1127 50  0000 C CNN
+F 2 "" H 7200 1300 50  0001 C CNN
+F 3 "" H 7200 1300 50  0001 C CNN
+	1    7200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1000 7200 1100
+Wire Wire Line
+	7200 1100 7300 1100
+Wire Wire Line
+	7300 1200 7200 1200
+Wire Wire Line
+	7200 1200 7200 1300
+$EndSCHEMATC

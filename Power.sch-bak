@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:AZ1117-3.3 U4
+U 1 1 5F785E31
+P 6050 1600
+F 0 "U4" H 6050 1842 50  0000 C CNN
+F 1 "AZ1117-3.3" H 6050 1751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6050 1850 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 6050 1600 50  0001 C CNN
+	1    6050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5F785FC6
+P 5450 2000
+F 0 "C15" H 5542 2046 50  0000 L CNN
+F 1 "0.1uF" H 5542 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5450 2000 50  0001 C CNN
+F 3 "~" H 5450 2000 50  0001 C CNN
+	1    5450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5F785FFA
+P 6600 2000
+F 0 "C16" H 6692 2046 50  0000 L CNN
+F 1 "0.1uF" H 6692 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6600 2000 50  0001 C CNN
+F 3 "~" H 6600 2000 50  0001 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1600 6350 1600
+Wire Wire Line
+	6600 1600 6600 1900
+Connection ~ 6350 1600
+Wire Wire Line
+	6350 1600 6600 1600
+Wire Wire Line
+	5450 1600 5450 1900
+Wire Wire Line
+	5450 1600 5750 1600
+Wire Wire Line
+	5450 2100 5450 2250
+Wire Wire Line
+	5450 2250 6050 2250
+Wire Wire Line
+	6050 2250 6050 1900
+Wire Wire Line
+	6050 2250 6600 2250
+Wire Wire Line
+	6600 2250 6600 2100
+Connection ~ 6050 2250
+$Comp
+L power:GND #PWR0164
+U 1 1 5F7880AE
+P 5450 2350
+F 0 "#PWR0164" H 5450 2100 50  0001 C CNN
+F 1 "GND" H 5455 2177 50  0000 C CNN
+F 2 "" H 5450 2350 50  0001 C CNN
+F 3 "" H 5450 2350 50  0001 C CNN
+	1    5450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2350 5450 2250
+Connection ~ 5450 2250
+$Comp
+L power:+3.3V #PWR0165
+U 1 1 5F7889B8
+P 6600 1500
+F 0 "#PWR0165" H 6600 1350 50  0001 C CNN
+F 1 "+3.3V" H 6615 1673 50  0000 C CNN
+F 2 "" H 6600 1500 50  0001 C CNN
+F 3 "" H 6600 1500 50  0001 C CNN
+	1    6600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1500 5450 1600
+Connection ~ 5450 1600
+Wire Wire Line
+	6600 1500 6600 1600
+Connection ~ 6600 1600
+$Comp
+L power:+5V #PWR0167
+U 1 1 5F789CB8
+P 5450 1500
+F 0 "#PWR0167" H 5450 1350 50  0001 C CNN
+F 1 "+5V" H 5465 1673 50  0000 C CNN
+F 2 "" H 5450 1500 50  0001 C CNN
+F 3 "" H 5450 1500 50  0001 C CNN
+	1    5450 1500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4450 3200 4450 500 
+Text Notes 5400 750  0    118  ~ 0
+5v to 3.3v LDO
+Wire Notes Line
+	500  3200 11200 3200
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5F7EE2DF
+P 1350 1650
+AR Path="/5F7621BF/5F7EE2DF" Ref="J?"  Part="1" 
+AR Path="/5FE183FC/5F7EE2DF" Ref="J?"  Part="1" 
+AR Path="/5F7621C5/5F7EE2DF" Ref="J26"  Part="1" 
+F 0 "J26" H 1550 1550 50  0000 R CNN
+F 1 "5v In" H 1650 1650 50  0000 R CNN
+F 2 "TBL005A-500-02GY-2WT:CUI_TBL005A-500-02GY-2WT" H 1350 1650 50  0001 C CNN
+F 3 "~" H 1350 1650 50  0001 C CNN
+	1    1350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5F7EE3E1
+P 3950 1800
+F 0 "#PWR01" H 3950 1650 50  0001 C CNN
+F 1 "+5V" H 3965 1973 50  0000 C CNN
+F 2 "" H 3950 1800 50  0001 C CNN
+F 3 "" H 3950 1800 50  0001 C CNN
+	1    3950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F7EE427
+P 1050 1850
+F 0 "#PWR02" H 1050 1600 50  0001 C CNN
+F 1 "GND" H 1055 1677 50  0000 C CNN
+F 2 "" H 1050 1850 50  0001 C CNN
+F 3 "" H 1050 1850 50  0001 C CNN
+	1    1050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1550 1050 1650
+Wire Wire Line
+	1050 1650 1150 1650
+Wire Wire Line
+	1150 1750 1050 1750
+Wire Wire Line
+	1050 1750 1050 1850
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5F9B52CA
+P 9350 1500
+F 0 "#PWR0104" H 9350 1350 50  0001 C CNN
+F 1 "+3.3V" H 9365 1673 50  0000 C CNN
+F 2 "" H 9350 1500 50  0001 C CNN
+F 3 "" H 9350 1500 50  0001 C CNN
+	1    9350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 5F9B69D0
+P 9350 1750
+F 0 "D9" V 9389 1632 50  0000 R CNN
+F 1 "Power (Red)" V 9298 1632 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9350 1750 50  0001 C CNN
+F 3 "~" H 9350 1750 50  0001 C CNN
+	1    9350 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5F9B7590
+P 9350 2100
+F 0 "R3" H 9409 2146 50  0000 L CNN
+F 1 "2k2" H 9409 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9350 2100 50  0001 C CNN
+F 3 "~" H 9350 2100 50  0001 C CNN
+	1    9350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F9B778A
+P 9350 2300
+F 0 "#PWR0110" H 9350 2050 50  0001 C CNN
+F 1 "GND" H 9355 2127 50  0000 C CNN
+F 2 "" H 9350 2300 50  0001 C CNN
+F 3 "" H 9350 2300 50  0001 C CNN
+	1    9350 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1500 9350 1600
+Wire Wire Line
+	9350 1900 9350 2000
+Wire Wire Line
+	9350 2200 9350 2300
+$Comp
+L 2020-10-08_01-35-33:3557-2 J30
+U 1 1 5FC05162
+P 2850 1950
+F 0 "J30" V 3145 1522 60  0000 R CNN
+F 1 "3557-2" V 3039 1522 60  0000 R CNN
+F 2 "Footprints:3557-2" H 3250 1690 60  0001 C CNN
+F 3 "" H 2850 1950 60  0000 C CNN
+	1    2850 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 1800 2150 1950
+Wire Wire Line
+	2150 1950 2850 1950
+Wire Wire Line
+	2850 1950 2950 1950
+Connection ~ 2850 1950
+Wire Wire Line
+	3050 1950 3150 1950
+Connection ~ 3150 1950
+Text Notes 2600 1400 0    50   ~ 0
+Automotive Fuse Holder
+Text Notes 1650 750  0    118  ~ 0
+Main Power Input
+Text Notes 8300 750  0    118  ~ 0
+3.3v Power Indication LED
+$Comp
+L power:+5VP #PWR0166
+U 1 1 5FE32901
+P 2150 1800
+F 0 "#PWR0166" H 2150 1650 50  0001 C CNN
+F 1 "+5VP" H 2165 1973 50  0000 C CNN
+F 2 "" H 2150 1800 50  0001 C CNN
+F 3 "" H 2150 1800 50  0001 C CNN
+	1    2150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR0169
+U 1 1 5FE32FA7
+P 1050 1550
+F 0 "#PWR0169" H 1050 1400 50  0001 C CNN
+F 1 "+5VP" H 1065 1723 50  0000 C CNN
+F 2 "" H 1050 1550 50  0001 C CNN
+F 3 "" H 1050 1550 50  0001 C CNN
+	1    1050 1550
+	1    0    0    -1  
+$EndComp
+Text Notes 1350 2350 0    50   ~ 0
++5VP should be a 5v input\nfrom a regulated source\nsuch as a BEC. Minimum 5A.
+Wire Wire Line
+	3950 1800 3950 1950
+Wire Wire Line
+	3150 1950 3950 1950
+Wire Notes Line
+	7750 3200 7750 500 
+$EndSCHEMATC
