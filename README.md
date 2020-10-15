@@ -2,6 +2,8 @@
 
 A wireless control system for a balloon-based aerial cave photography lighting platform.
 
+![PCB Render](https://github.com/RyanAbsher/ALP/blob/master/Renders/3.png?raw=true)
+
 ## Introduction
 A friend of mine has for a long time wanted to photograph the top of a particular cave chamber that has never been photographed before. The chamber is 396 feet tall, so access to the top is obviously somewhat limited. In the past they have used a 6' diameter weather balloon to lift lighting to the top, then used telephoto lenses to photograph it from the ground. This time they are putting the cameras on the balloon, but they didn't have a good way to control the equipment from the ground. This project is the solution to that problem.
 
