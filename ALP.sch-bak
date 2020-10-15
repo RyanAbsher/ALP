@@ -14,12 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1000 2350 2900 2750
-U 5F7620D3
-F0 "STM32" 50
-F1 "STM32.sch" 50
-$EndSheet
-$Sheet
 S 7200 2350 2900 2750
 U 5F7621BF
 F0 "IO" 50
@@ -37,4 +31,10 @@ F1 "Relays.sch" 50
 $EndSheet
 Text Notes 4900 3850 0    276  ~ 0
 Relays
+$Sheet
+S 1000 2350 2900 2750
+U 5F7620D3
+F0 "Main" 50
+F1 "Main.sch" 50
+$EndSheet
 $EndSCHEMATC
