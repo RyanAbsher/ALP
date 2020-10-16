@@ -21,3 +21,8 @@ There are various other pieces of hardware that are controllable from the ground
 ## Prototype
 ![PCB Render](https://github.com/RyanAbsher/ALP/blob/master/Renders_Photos/Panels_Prototype.jpg?raw=true)
 The photo above contains the laser-etched acrylic control panels, and the stripboard working prototype that I built. While it admittedly doesn't look that great, it did serve it's purpose in that it showed all of the pieces of the system could communicate and function as expected.
+
+## To Do
+I have an STM32 dev board on the way that has the same chip that I will be using on this board (STM32F103RBT6). I will use it to confirm that it can do everything I expect of it, then I will be ordering the PCBs. I will likely be ordering them from JLCPCB, and will have them assemble the SMT components on at least a few of the boards. The boards will be populated differently depending on which location they are currently in. For example, the control boxes will not need the relays populated. I will hand-solder the relays and connectors as needed.
+
+Once I have the boards in hand, then I can write the necessary software. I programmed the protoype using the Arduino environment, and I was happy with the way the software worked. Since I have the software mostly completed, it should be fairly simple to port it over to the STM32, likely using STs STM32CubeIDE software. When the software is complete, I will add it to this repository.
